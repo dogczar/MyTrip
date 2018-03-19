@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context="br.com.renan.mytrip.MainActivity">
+
+    <View
+        android:id="@+id/view_detalhe"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_et"
+        android:gravity="center"
+        android:hint="@string/distancia"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_detalhe" />
+
+    <TextView
+        android:id="@+id/distance_tv"
+        style="@style/MyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quilometros_a_serem_percorridos"
+        app:layout_constraintTop_toBottomOf="@id/distance" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_et"
+        android:gravity="center"
+        android:hint="@string/preco"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/distance_tv" />
+
+    <TextView
+        android:id="@+id/price_tv"
+        style="@style/MyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pre_o_do_litro"
+        app:layout_constraintTop_toBottomOf="@id/price" />
+
+    <EditText
+        android:id="@+id/autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_et"
+        android:gravity="center"
+        android:hint="@string/autonomia"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/price_tv" />
+
+    <TextView
+        android:id="@+id/autonomy_tv"
+        style="@style/MyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/autonomia_do_carro"
+        app:layout_constraintTop_toBottomOf="@id/autonomy" />
+
+    <TextView
+        android:id="@+id/custo_tv"
+        style="@style/MyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/custo_da_viagem"
+        app:layout_constraintTop_toBottomOf="@id/autonomy_tv" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/r_0_00"
+        android:textColor="@color/result"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/custo_tv" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_bt"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/calcular"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result" />
+
+</android.support.constraint.ConstraintLayout>
